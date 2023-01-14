@@ -2,7 +2,7 @@
 Android Java Persian Beatiful Toast With Animations and Fonts
 >Created By @Mehrdadhbs in 2023/01/14
 more info 
-https://www.herdadhbs.ir
+https://www.merdadhbs.ir
 
 
 >Step 1. Add the JitPack repository to your build file
