@@ -37,27 +37,18 @@ materialToast.show(MaterialToast.TOAST_SUCCESS);
  > Info Type
  
 ```
-MaterialToast materialToast = new MaterialToast(SalaryMain.this);
-materialToast.setTitleText("Sample Title");
-materialToast.setMainText("Sample Text");
 materialToast.show(MaterialToast.TOAST_INFO);
 ```
 
 
  > Warning Type
  ```
-MaterialToast materialToast = new MaterialToast(SalaryMain.this);
-materialToast.setTitleText("Sample Title");
-materialToast.setMainText("Sample Text");
 materialToast.show(MaterialToast.TOAST_WARNING);
 ```
 
 
  > Error Type
  ```
-MaterialToast materialToast = new MaterialToast(SalaryMain.this);
-materialToast.setTitleText("Sample Title");
-materialToast.setMainText("Sample Text");
 materialToast.show(MaterialToast.TOAST_WARNING);
 ```
 
