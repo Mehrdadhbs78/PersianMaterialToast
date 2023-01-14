@@ -10,7 +10,7 @@ https://www.mehrdadhbs.ir
 
 #
 
-![screenshot1](https://s2.uupload.ir/files/screenshot_2023-01-14-13-14-03_z3tz.png)
+![screenshot1](https://s2.uupload.ir/files/screenshot_2023-01-14-13-14-03_kcsm.png)
 >Step 1. Add the JitPack repository to your build file
 ```Gradle Settings
 allprojects {
