@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MaterialToast</string>
+    <string name="toastTitle">تست متن اصلی تواست</string>
+    <string name="toastText">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MaterialToast">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="#4285F4"
+        android:maxWidth="50dp"
+        android:minWidth="50dp"
+        app:cardCornerRadius="10dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                app:rpbBackgroundColor="#70A3F8"
+                android:id="@+id/progressBar"
+                android:layout_alignBottom="@+id/bottomPadding"
+                app:rpbCornerRadius="20dp"
+                app:rpbProgressColor="#205ABA"
+                app:rpbShowProgressText="false" />
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_alignTop="@+id/topPadding"
+                android:background="#205ABA"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/bottomPadding"
+                android:layout_height="wrap_content"/>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:id="@+id/topPadding"
+                android:layout_height="1dp"/>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/toastSuccessIcon"
+                android:layout_width="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/warning" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/textLayouts"
+                android:layoutDirection="rtl"
+                android:layout_toLeftOf="@+id/toastSuccessIcon"
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:layout_below="@+id/topPadding"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toastTitle"
+                    android:textColor="#fafafa"
+                    android:id="@+id/textTitle"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toastText"
+                    android:textColor="#CCCCCC"
+                    android:id="@+id/textExplain"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:id="@+id/bottomPadding"
+                android:layout_below="@+id/textLayouts"
+                android:layout_height="1dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
