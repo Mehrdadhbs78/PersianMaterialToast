@@ -26,7 +26,7 @@ How To Use (Java Code)
 
 > Success Type
 ```
-MaterialToast materialToast = new MaterialToast(SalaryMain.this);
+MaterialToast materialToast = new MaterialToast(context);
 materialToast.setTitleText("Sample Title");
 materialToast.setMainText("Sample Text");
 materialToast.show(MaterialToast.TOAST_SUCCESS);
