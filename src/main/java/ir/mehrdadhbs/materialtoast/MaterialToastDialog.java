@@ -6,6 +6,7 @@ import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
@@ -93,7 +94,14 @@ class MaterialToastDialog extends Dialog {
         textTitle.setText(Persian.faDigit(Title));
         textExplain.setText(Persian.faDigit(Text));
 
-        Timer timer = new Timer();
+        if(Title.equals("")){
+            textTitle.setVisibility(View.GONE);
+        }
+        if(Text.equals("")){
+            textExplain.setVisibility(View.GONE);
+        }
+
+        final Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
             public void run() {

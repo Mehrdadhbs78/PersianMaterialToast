@@ -22,11 +22,13 @@ public class MaterialToast {
        this.context = context;
     }
 
-    public void setTitleText(String Text){
+    public MaterialToast setTitleText(String Text){
         this.Title = Text;
+        return this;
     }
-    public void setMainText(String Text){
+    public MaterialToast setMainText(String Text){
         this.Text = Text;
+        return this;
     }
 
 

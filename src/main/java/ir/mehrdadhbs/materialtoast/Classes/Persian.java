@@ -6,7 +6,7 @@ public class Persian {
 
     public static String TOM = "تومان";
     public static String RIAL = "ریال";
-    private static String[] persianNumbers = new String[]{"۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"};
+    private static final String[] persianNumbers = new String[]{"۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"};
 
     public static String moneyFormat(Long price, String currency) {
 
