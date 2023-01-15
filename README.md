@@ -29,12 +29,9 @@ allprojects {
 
 How To Use (Java Code)
 
-> Success Type
+> Toast Make Java File (Updated)
 ```
-MaterialToast materialToast = new MaterialToast(context);
-materialToast.setTitleText("Sample Title");
-materialToast.setMainText("Sample Text");
-materialToast.show(MaterialToast.TOAST_SUCCESS);
+new MaterialToast(context).setTitleText(titleText).setMainText(subText).show(MaterialToast.TOAST_SUCCESS);
 ```       
 
 
