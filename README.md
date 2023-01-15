@@ -29,6 +29,11 @@ allprojects {
 
 How To Use (Java Code)
 
+>Imports 
+```
+import ir.mehrdadhbs.materialtoast.MaterialToast;
+```
+
 > Toast Make Java File (Updated)
 ```
 new MaterialToast(context).setTitleText(titleText).setMainText(subText).show(MaterialToast.TOAST_SUCCESS);
